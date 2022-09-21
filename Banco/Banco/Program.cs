@@ -11,6 +11,7 @@ namespace Banco
             Console.Write("Digite o nome do titular: ");
             conta1.titular = Console.ReadLine();
 
+            //assignment area
             Console.Write("Digite a agência (Ex: xxxx-x): ");
             conta1.agencia = Console.ReadLine();
             Console.Write("Digite o número da conta (Ex: xxxx-x): ");
@@ -19,11 +20,11 @@ namespace Banco
             conta1.saldo = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("\nEstas são as informações da conta:\n");
-
+            //info display area
             Console.WriteLine($"Titular da conta: {conta1.titular}");
             Console.WriteLine($"Agência: {conta1.agencia}");
             Console.WriteLine($"Número da conta: {conta1.numero}");
-            Console.WriteLine($"Saldo Total: {conta1.saldo}");
+            Console.WriteLine($"Saldo Total: {conta1.saldo.ToString("C")}");
         }
     }
 }
