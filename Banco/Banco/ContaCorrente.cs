@@ -8,5 +8,10 @@ namespace Banco
 {
     internal class ContaCorrente
     {
+        string titular;
+        string agencia;
+        string numero;
+        string conta;
+
     }
 }
